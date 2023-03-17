@@ -8,7 +8,7 @@ const SearchBook = ({ selectedBooks, updateBookShelf }) => {
   const [books, setBooks] = useState([]);
 
   const onChangeSearchHandler = async (e) => {
-    const inputValue = e.target.value.trim();
+    const inputValue = e.target.value;
     setSearchText(inputValue);
     if (!inputValue) {
       setBooks([]);
